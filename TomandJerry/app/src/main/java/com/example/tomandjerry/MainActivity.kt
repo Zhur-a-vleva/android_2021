@@ -14,12 +14,11 @@ class MainActivity : AppCompatActivity() {
 
         tom.setOnClickListener {
             if (tom.alpha.equals(0F)) {
-                jerry.animate().alpha(0F).duration = 3000
-                tom.animate().alpha(1F).duration = 3000
-            }
-            else {
-                tom.animate().alpha(0F).duration = 3000
-                jerry.animate().alpha(1F).duration = 3000
+                jerry.animate().alpha(0F).rotation(3600F).scaleX(0F).scaleY(0F).duration = 3000
+                tom.animate().alpha(1F).rotation(-3600F).scaleX(1F).scaleY(1F).duration = 3000
+            } else {
+                tom.animate().alpha(0F).rotation(3600F).scaleX(0F).scaleY(0F).duration = 3000
+                jerry.animate().alpha(1F).rotation(-3600F).scaleX(1F).scaleY(1F).duration = 3000
 
             }
         }
